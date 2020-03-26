@@ -3,3 +3,13 @@ SpringBoot使用一个全局的配置文件,也就是下面任意一个SpringBoo
 配置文件名是固定的
 application.properties
 application.yml
+配置文件的作用: 修改Springboot自动配置的默认值,比如说server.port端口号就可以在配置文件中修改
+
+
+YAML语法之"引用":
+&锚点,*别名,<<表示合并到当前数据.
+
+&yoxi (建立锚点)
+<<: *yoxi (表示讲锚点的内容合并到当前数据中)
+
+
